@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import ImageGallery from './ImageGallery';
+
 
 function App() {
+  //links array to access the images from URLs
+  const links = ["https://www.testdome.com/files/resources/12362/aff5c408-79f8-4220-9769-8b4cde774c98.jpg", "https://bit.ly/3flyaMj"];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImageGallery links={links}/>
     </div>
   );
 }
